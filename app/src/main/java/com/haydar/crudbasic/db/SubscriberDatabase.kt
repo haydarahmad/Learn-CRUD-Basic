@@ -9,7 +9,7 @@ import java.time.Instant
 @Database(entities = [Subscriber::class], version = 1)
 abstract class SubscriberDatabase : RoomDatabase() {
 
-    abstract val subscriberDAO : SubscriberDAO
+    abstract val subscriberDAO: SubscriberDAO
 
     /*
      we should only use one interface of room

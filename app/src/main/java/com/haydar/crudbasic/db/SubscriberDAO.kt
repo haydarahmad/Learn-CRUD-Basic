@@ -11,7 +11,7 @@ interface SubscriberDAO {
     // because it might lock database access on the main thread
     // suspend ca be paused an resumed at a letter time
     @Insert
-    suspend fun insertSubscriber(subscriber: Subscriber) : Long
+    suspend fun insertSubscriber(subscriber: Subscriber): Long
 
     @Update
     suspend fun updateSubscriber(subscriber: Subscriber)
